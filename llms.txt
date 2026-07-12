@@ -1,0 +1,56 @@
+# getascraper/how-to-scrape-kaspi
+
+> Kaspi Product Scraper is an Apify Actor that extracts products, prices, Kaspi bonus, installments, ratings, and stock from Kaspi.kz. Free tier available.
+
+## Overview
+- Kaspi.kz scraper and product data extraction API
+- Extracts: price, Kaspi bonus price, installments, rating, stock, delivery
+- Output formats: JSON, CSV, Excel, XML, RSS
+- Free tier: included
+
+## Key Pages
+- README: https://github.com/getascraper/how-to-scrape-kaspi/blob/main/README.md
+- Apify Store: https://apify.com/getascraper/kaspi-product-scraper
+- Apify Console: https://console.apify.com/actors/getascraper~kaspi-product-scraper
+- Source Actor: https://github.com/getascraper/actorstack/tree/main/actors/kaspi-product-scraper
+
+## How it works
+1. Add search keywords in Russian or Kazakh, or direct Kaspi search URLs
+2. Pick a city so prices, Kaspi bonus, and stock match that market
+3. The actor collects every matching product and writes one flat row per item
+
+## Target site characteristics
+- Public product catalog data from Kaspi.kz, Kazakhstan's leading marketplace
+- Up to 24 top-relevance products returned per search keyword
+- Covers 6 cities: Almaty, Astana, Shymkent, Karaganda, Aktobe, Aktau
+
+## API Usage
+- Node.js SDK: https://docs.apify.com/api/client/js
+- REST API: https://docs.apify.com/api/v2
+- MCP server: https://github.com/apify/apify-mcp-server
+
+## Supported target URLs
+- https://kaspi.kz/shop/search/?text=<keyword>
+- https://kaspi.kz/shop/
+
+## Pricing
+- Free tier: included
+- Paid: $0.88 per 1,000 results
+
+## Output schema (highlights)
+- price: Current price in tenge
+- priceWithBonus: Price after Kaspi bonus deduction
+- monthlyInstallment: Monthly installment amount
+- rating / reviewsQuantity: Customer rating and review count
+- inStock / stockCount: Availability and units in stock
+- deliveryDuration: Delivery speed
+
+## Use cases
+- Reseller checking live Kaspi market prices before setting their own
+- Retail researcher comparing pricing and assortment across Kazakhstan cities
+- Brand owner monitoring their products' prices, ratings, and stock on Kaspi
+- Developer feeding live Kaspi.kz data into a price or deals database
+
+## Support
+- GitHub Issues: https://github.com/getascraper/how-to-scrape-kaspi/issues
+- Apify Console: https://console.apify.com/actors/getascraper~kaspi-product-scraper/issues

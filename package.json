@@ -1,0 +1,38 @@
+{
+  "name": "how-to-scrape-kaspi",
+  "version": "1.0.0",
+  "description": "Scrape products, prices, Kaspi bonus, installments, ratings, and stock from Kaspi.kz, Kazakhstan's leading marketplace. Search by keyword in Russian or Kazakh across 6 cities.",
+  "type": "module",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node src/main.js"
+  },
+  "keywords": [
+    "apify",
+    "apify-actor",
+    "web-scraping",
+    "data-extraction",
+    "ecommerce",
+    "price-tracking",
+    "marketplace",
+    "kaspi",
+    "kaspi-scraper",
+    "kaspi-data",
+    "kaspi-kz",
+    "kazakhstan",
+    "almaty",
+    "astana",
+    "product-scraper",
+    "price-monitoring",
+    "installments",
+    "ratings",
+    "reviews",
+    "reseller-tools"
+  ],
+  "author": "Devansh-365",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apify-client": "^2.12.0",
+    "dotenv": "^16.5.0"
+  }
+}
